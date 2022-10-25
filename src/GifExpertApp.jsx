@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory, GifGrid } from './components';
 
 export const GifExpertApp = () => {
 
-  const [categories, setCategories] = useState(['one puch']);
+  const [categories, setCategories] = useState([]);
 
   const onAddCategory = ( newCategory ) => {
     if ( categories.includes(newCategory) ) {
@@ -31,7 +30,6 @@ export const GifExpertApp = () => {
             )
           )
         }
-          {/* gif item */}
     </>
   )
 }
