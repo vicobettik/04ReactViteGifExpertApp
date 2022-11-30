@@ -30,7 +30,7 @@ describe("Pruebas sobre el componente AddCategory", () => {
       },
     });
 
-    fireEvent.submit(form);
+    bmit(form);
 
     expect(input.value).toBe("");
 
